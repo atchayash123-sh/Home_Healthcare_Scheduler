@@ -1,0 +1,107 @@
+.clients-page {
+    width: 100%;
+}
+
+.clients-page h1 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.clients-page>p {
+    color: #758198;
+    margin-bottom: 25px;
+}
+
+.client-form,
+.client-list {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px #0000000a;
+}
+
+.client-form h2,
+.client-list h2 {
+    color: #263247;
+    margin-bottom: 20px;
+}
+
+.client-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.client-form input,
+.client-form select,
+.search-box {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5dbea;
+    border-radius: 8px;
+    outline: none;
+}
+
+.client-form input:focus,
+.client-form select:focus,
+.search-box:focus {
+    border-color: #3156a5;
+}
+
+.client-form button {
+    background: #3156a5;
+    cursor: pointer;
+}
+
+.client-form .cancel-btn {
+    background: #667085;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.client-list table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.client-list th,
+.client-list td {
+    padding: 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.client-list th {
+    background: #f4f6fb;
+}
+
+.client-list .edit-btn {
+    background: #2563eb;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.client-list .delete-btn {
+    background: #dc3545;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .client-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .client-form,
+    .client-list {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,125 @@
+.careplans-page {
+    width: 100%;
+}
+
+.careplans-page h1 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.careplans-page>p {
+    color: #758198;
+    margin-bottom: 25px;
+}
+
+.care-form,
+.care-list {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px #0000000a;
+}
+
+.care-form h2,
+.care-list h2 {
+    color: #263247;
+    margin-bottom: 20px;
+}
+
+.care-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.care-form input,
+.care-form select,
+.care-form textarea,
+.care-search {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5dbea;
+    border-radius: 8px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.care-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.care-form input:focus,
+.care-form select:focus,
+.care-form textarea:focus,
+.care-search:focus {
+    border-color: #3156a5;
+}
+
+.care-form button {
+    background: #3156a5;
+    cursor: pointer;
+}
+
+.care-form .cancel-btn {
+    background: #667085;
+}
+
+.care-search {
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.care-table-wrapper {
+    overflow-x: auto;
+}
+
+.care-list table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.care-list th,
+.care-list td {
+    padding: 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.care-list th {
+    background: #f4f6fb;
+}
+
+.active-status {
+    color: green;
+    font-weight: bold;
+}
+
+.other-status {
+    color: #d18b00;
+    font-weight: bold;
+}
+
+.care-list .edit-btn {
+    background: #2563eb;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.care-list .delete-btn {
+    background: #dc3545;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .care-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .care-form,
+    .care-list {
+        padding: 15px;
+    }
+}
